@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+
+public class _7_CountOfBitsOne {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a positive integer number: ");
+		int number = scan.nextInt();
+		String bin = Integer.toBinaryString(number);
+		int binInt = Integer.parseInt(bin);
+		int x = binInt/10;
+		int c = x%10;
+		System.out.println(c);
+	}
+
+}

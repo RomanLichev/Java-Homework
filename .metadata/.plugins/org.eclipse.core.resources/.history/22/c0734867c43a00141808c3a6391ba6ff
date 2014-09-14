@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class _8_CountOfEqualBitPairs {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a positiv integer number : ");
+		int n = scan.nextInt();
+		String bin = Integer.toBinaryString(n);
+		long binary = Long.parseLong(bin);
+		System.out.println(binary);
+	}
+}

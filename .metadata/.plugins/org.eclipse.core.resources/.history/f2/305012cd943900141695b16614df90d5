@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class _3_PointsInsideFigure {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter x and y float numbers coordinates of point");
+		float x1 = scan.nextFloat();
+		float y1 = scan.nextFloat();
+		float x2 = 12.5f;
+		float y2 = 13.5f;
+		float x3 = 17.5f;
+		float y3 = 13.5f;
+		float x4 = 17.5f;
+		float y4 = 8.5f;
+		float x5 = 12.5f;
+		float y5 = 8.5f;
+		float x6 = 12.5f;
+		float y6 = 6f;
+		float x7 = 22.5f;
+		float y7 = 6f;
+		float x8 = 22.5f;
+		float y8 = 8.5f;
+		float x9 = 22.5f;
+		float y9 = 13.5f;
+		float x10 = 20f;
+		float y10 = 13.5f;
+		float x11 = 20f;
+		float y11 = 8.5f;
+	}
+
+}

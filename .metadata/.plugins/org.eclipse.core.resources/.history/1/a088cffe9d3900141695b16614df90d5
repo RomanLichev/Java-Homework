@@ -1,0 +1,84 @@
+import java.util.Scanner;
+
+public class _3_PointsInsideFigure {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter x and y float numbers coordinates of point: ");
+		float x1 = scan.nextFloat();
+		float y1 = scan.nextFloat();
+		float x2 = 12.5f;
+		float y2 = 13.5f;
+		float x3 = 17.5f;
+		float y3 = 13.5f;
+		float x4 = 17.5f;
+		float y4 = 8.5f;
+		float x5 = 12.5f;
+		float y5 = 8.5f;
+		float x6 = 12.5f;
+		float y6 = 6f;
+		float x7 = 22.5f;
+		float y7 = 6f;
+		float x8 = 22.5f;
+		float y8 = 8.5f;
+		float x9 = 22.5f;
+		float y9 = 13.5f;
+		float x10 = 20f;
+		float y10 = 13.5f;
+		float x11 = 20f;
+		float y11 = 8.5f;
+		
+		float area1 =
+				Math.abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2;
+		
+		float area2 = 
+				Math.abs(x1 * (y3 - y4) + x3 * (y4 - y1) + x4 * (y1 - y3)) / 2;
+		
+		float area3 = 
+				Math.abs(x1 * (y4 - y5) + x4 * (y5 - y1) + x5 * (y1 - y4)) / 2;
+		
+		float area4 = 
+				Math.abs(x1 * (y5 - y2) + x5 * (y2 - y1) + x2 * (y1 - y5)) / 2;	
+		
+		float sum1 = area1 + area2 + area3 + area4;
+		
+		float area5 =
+				Math.abs(x1 * (y5 - y6) + x5 * (y6 - y1) + x6 * (y1 - y5)) / 2;
+		
+		float area6 = 
+				Math.abs(x1 * (y6 - y7) + x6 * (y7 - y1) + x7 * (y1 - y6)) / 2;
+		
+		float area7 = 
+				Math.abs(x1 * (y7 - y8) + x7 * (y8 - y1) + x8 * (y1 - y7)) / 2;
+		
+		float area8 = 
+				Math.abs(x1 * (y8 - y5) + x8 * (y5 - y1) + x5 * (y1 - y8)) / 2;
+		
+		float sum2 = area5 + area6 + area7 +area8;
+		
+		float area9 = 
+				Math.abs(x1 * (y8 - y9) + x8 * (y9 - y1) + x9 * (y1 - y8)) / 2;
+		
+		float area10 = 
+				Math.abs(x1 * (y9 - y10) + x9 * (y10 - y1) + x10* (y1 - y9)) / 2;
+		
+		float area11 = 
+				Math.abs(x1 * (y10 - y11) + x10 * (y11 - y1) + x11* (y1 - y10)) / 2;
+		
+		float area12 = 
+				Math.abs(x1 * (y11 - y8) + x11 * (y8 - y1) + x8* (y1 - y11)) / 2;
+		
+		float sum3 = area9 + area10 + area11 + area12;
+		
+		if (sum1 <= 25 || sum2 <= 25 || sum3 <= 12.5) {
+			
+			System.out.print("Inside");
+			
+		} else {
+			
+			System.out.print("Outside");
+		}
+	}
+
+}

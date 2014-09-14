@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class _2_TriangleArea {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter integer number for x and y coordinates of first point");
+		int x1 = scan.nextInt();
+		int y1 = scan.nextInt();
+		System.out.println("Enter integer number for x and y coordinates of second point");
+		int x2 = scan.nextInt();
+		int y2 = scan.nextInt();
+		System.out.println("Enter integer number x and y coordinates of third point");
+		int x3 = scan.nextInt();
+		int y3 = scan.nextInt();
+		int area = Math.abs(x1*(y2-y3) +  x2*(y3-y1) + x3*(y1-y2))/2;
+		System.out.print("Area of triangle S = " + area);
+	}
+
+}

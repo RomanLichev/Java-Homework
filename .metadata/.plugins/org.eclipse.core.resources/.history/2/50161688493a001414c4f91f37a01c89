@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+
+public class _5_DecimalToHexadecimal {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter positive integer number ");
+		int number = scan.nextInt();
+		System.out.println(Integer.toHexString(number).toUpperCase());
+		}
+}

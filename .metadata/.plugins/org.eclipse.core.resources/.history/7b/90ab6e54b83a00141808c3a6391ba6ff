@@ -1,0 +1,29 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class _4_TheSmallestOf3Numbers {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Please enter three intefer number a,b and c: ");
+		double a = scan.nextDouble();
+		double b = scan.nextDouble();
+		double c = scan.nextDouble();
+//		if (a<b && a<c) {
+//			System.out.println("The smallest of three numbers is a = " + a);	
+//		}
+//		if (b<a && b<c) {
+//			System.out.println("The smallest of three numbers is b = " + b);	
+//		}
+//		if (c<a && c<b){
+//			System.out.println("The smallest of tree numbers is c = " + c);
+//		}
+		//or
+		double minAB = (Double.min(a, b));
+		double minimum = (Double.min(minAB,c));
+		System.out.println(minimum);
+	}
+
+}

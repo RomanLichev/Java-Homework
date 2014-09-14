@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class _6_FormattingNumbers {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter  positive integer number a: ");
+		int number = scan.nextInt();
+		System.out.println("Enter a floating number b: ");
+		double dnumber1 = scan.nextDouble();
+		System.out.println("Enter a floating number c: ");
+		double dnumber2 = scan.nextDouble();
+		String line = "|";
+		String hex = Integer.toHexString(number).toUpperCase();
+		String bin = Integer.toBinaryString(number);
+		System.out.printf(line + "%-10s" + line + "%10s" + line + "%10.2f" + line ,hex,bin,dnumber1);
+	}
+
+}
